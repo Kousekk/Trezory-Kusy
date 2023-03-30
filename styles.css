@@ -1,0 +1,53 @@
+html{
+  margin : 0;
+  padding: 0;
+}
+
+.logo_image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 7rem;
+}
+
+body{
+  background-color: rgb(33, 45, 76);
+}
+
+.main_bar{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.nav_bar{
+  padding: 0;
+  gap: 0.3rem;
+  row-gap: 1rem;
+  display: inline-flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  font-size: 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800;
+}
+.nav_bar_buttons{
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  border: solid 0.15rem rgb(182, 166, 221);
+  border-radius: 0.7rem;
+
+  background-color: rgba(133, 92, 171, 0.881);
+
+  text-decoration: none;
+  color:aliceblue;
+}
+
+.nav_bar_buttons:hover{
+  background-color: blue;
+}
+
+
