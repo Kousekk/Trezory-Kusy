@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
-html{
-  
-}
 
 *{
   margin : 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body{
   background-color: #e6e6e6;
+}
+
+#about_us_mobile{
+  display: none;
+}
+.welcome_bar_mobile{
+  display: none;
 }
 .logo_image{
   display: block;
@@ -141,6 +146,55 @@ body{
 }
 
 @media only screen and (max-width: 768px){
+
+  .welcome_text{
+    display: none;
+  }
+ .welcome_bar_mobile{
+  display: block;
+  position: relative;
+  height: 4.5rem;
+ }
+  .welcome_text_mobile{
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    padding: 0 1rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Teko', sans-serif;
+    border: solid black 0.2rem;
+    border-radius: 1rem;
+  }
+  #about_us_mobile{
+    display: block;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Teko', sans-serif;
+  }
+  .about_us_mobile_section_2{
+    margin: 2rem 0;
+  }
+  .back_to_choose_button{
+    display: block;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    padding: 0 2rem;
+    text-decoration: none;
+    border: solid 0.3rem black;
+    border-radius: 1.5rem;
+    color:black;
+    transition: 0.2s;
+  }
+  .back_to_choose_button:hover{
+    background-color: rgb(182, 180, 180);
+  }
   .nav_bar {
     margin-left: 1rem;
     margin-right: 1rem;
